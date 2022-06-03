@@ -4,3 +4,4 @@ import './drawingtool.ts'
 import './colors.ts'
 import './clearnerase.ts'
 import './buttons.ts'
+import './eraser';

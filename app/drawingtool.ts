@@ -1,4 +1,5 @@
 import { ctx, canvas } from "./canvas"
+export let mouse = { x:0,y:0 }
 
 canvas.addEventListener("mousedown", function(event) {
   ctx.beginPath();
@@ -7,6 +8,8 @@ canvas.addEventListener("mousedown", function(event) {
 
 canvas.addEventListener("mousemove", function(event) {
   if (event.buttons === 1) {
+    mouse.x = event.offsetX 
+    mouse.y = event.offsetY 
     ctx.lineTo(event.offsetX, event.offsetY);
     ctx.stroke();
   }
@@ -29,4 +32,8 @@ clearButton.addEventListener(
   }
 )
 import { makeButton } from './controls';
+
+
+
+
 
