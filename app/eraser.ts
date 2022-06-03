@@ -26,7 +26,9 @@ function animate () {
   }  else{
     eraser.x-=1;
     eraser.y-=slope
-  }*/
+  }
+old slope code, cant divide by zero, makes cookie monster sad and you without friends, well, you already had no friends so no change then, you just hurt a blue monster for no reason.
+*/
   ctx.drawImage(
     EraserImage,eraser.x,eraser.y,
     40,40
